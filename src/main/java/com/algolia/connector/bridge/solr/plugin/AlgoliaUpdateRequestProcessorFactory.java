@@ -37,7 +37,8 @@ public class AlgoliaUpdateRequestProcessorFactory extends UpdateRequestProcessor
     private String indexName;
 
     @Override
-    public void init(NamedList<?> args) {
+    @SuppressWarnings({"rawtypes"})
+    public void init(NamedList args) {
         this.applicationId = (String) args.get("applicationId");
         this.writeKey = (String) args.get("writeKey");
         this.indexName = (String) args.get("indexName");

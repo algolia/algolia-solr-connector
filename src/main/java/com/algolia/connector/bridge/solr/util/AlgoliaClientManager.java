@@ -25,9 +25,9 @@ import java.lang.invoke.MethodHandles;
 /**
  * @author Rakesh Kumar
  */
-public enum AlgoliaClientManager implements CloseHook {
+public class AlgoliaClientManager extends CloseHook {
 
-    INSTANCE;
+    static AlgoliaClientManager instance;
 
     private static final Logger LOGGER = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
 
@@ -53,7 +53,7 @@ public enum AlgoliaClientManager implements CloseHook {
     }
 
     public static AlgoliaClientManager getInstance() {
-        return INSTANCE;
+        return instance;
     }
 
     //--------------------------------- CloseHook Methods ---------------------------------
@@ -70,4 +70,10 @@ public enum AlgoliaClientManager implements CloseHook {
             }
         }
     }
+
+	@Override
+	public void postClose(SolrCore core) {
+		// TODO Auto-generated method stub
+		throw new UnsupportedOperationException("Unimplemented method 'postClose'");
+	}
 }
