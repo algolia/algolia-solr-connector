@@ -1,0 +1,187 @@
+{
+    "responseHeader": {
+        "status": 0,
+        "QTime": 3,
+        "params": {
+            "q": "*:*",
+            "start": "0",
+            "rows": "100"
+        }
+    },
+    "response": {
+        "numFound": 22,
+        "start": 0,
+        "numFoundExact": true,
+        "docs": [
+            {
+                "msg": [
+                    "Solr says hi!!"
+                ],
+                "id": "acfc4266-2fad-4d9e-9b0a-c8aecfa90067",
+                "dateAdded": [
+                    "2024-01-11T20:49:33Z"
+                ],
+                "_version_": 1787828553705848832
+            },
+            {
+                "id": "d77dd198-6377-4ba5-9fae-d19e903965f8",
+                "title": [
+                    "Amazon Kindle Paperwhite"
+                ],
+                "_version_": 1787920392066695168
+            },
+            {
+                "id": "4fb3b4bb-980f-4d9f-8e38-649cbf37aa7b",
+                "title": [
+                    "Amazon Kindle Paperwhite"
+                ],
+                "_version_": 1787922427648409600
+            },
+            {
+                "id": "b8c353dc-5f68-4183-91c4-055cfef34015",
+                "title": [
+                    "Amazon Kindle Paperwhite"
+                ],
+                "_version_": 1788265762263138304
+            },
+            {
+                "id": "2db8f89a-0e24-424d-aeac-8bf1ef11c888",
+                "title": [
+                    "Amazon Kindle Paperwhite"
+                ],
+                "_version_": 1788268071322910720
+            },
+            {
+                "id": "54090d5f-96af-48d0-a06b-ced5747838bc",
+                "title": [
+                    "Amazon Kindle Paperwhite"
+                ],
+                "_version_": 1788268511137628160
+            },
+            {
+                "id": "c2c5aaab-2d82-4f11-94a4-582c0a203b9c",
+                "title": [
+                    "Amazon Kindle Paperwhite"
+                ],
+                "_version_": 1788268596757004288
+            },
+            {
+                "id": "e8e8da8b-4f73-4186-bfba-1f3458b62360",
+                "title": [
+                    "Amazon Kindle Paperwhite"
+                ],
+                "_version_": 1788268997532188672
+            },
+            {
+                "id": "fecd4b5f-02db-449e-9b06-628cf7861b23",
+                "title": [
+                    "Amazon Kindle Paperwhite"
+                ],
+                "_version_": 1788269523175997440
+            },
+            {
+                "id": "fb82de17-9de8-4121-bbb5-df67ebe49ae5",
+                "title": [
+                    "Amazon Kindle Paperwhite"
+                ],
+                "_version_": 1788269603485384704
+            },
+            {
+                "msg": [
+                    "Solr says hi!!"
+                ],
+                "id": "306c4b3a-9779-408f-a332-aa531a236362",
+                "dateAdded": [
+                    "2024-01-11T21:31:51Z"
+                ],
+                "_version_": 1787831215379709952
+            },
+            {
+                "id": "0ea06ab9-e786-4ba6-922d-7d0797b2c20c",
+                "msg": [
+                    "hello"
+                ],
+                "dateAdded": [
+                    "2024-01-12T16:06:05Z"
+                ],
+                "_version_": 1787901316135124992
+            },
+            {
+                "id": "4bd47e15-230b-40c2-8af2-a356953cde35",
+                "msg": [
+                    "hello"
+                ],
+                "dateAdded": [
+                    "2024-01-12T16:47:14Z"
+                ],
+                "_version_": 1787903905541128192
+            },
+            {
+                "id": "78444022-1e65-40cc-9c91-c079e6690f78",
+                "msg": [
+                    "hello"
+                ],
+                "dateAdded": [
+                    "2024-01-12T17:37:06Z"
+                ],
+                "_version_": 1787907042263957504
+            },
+            {
+                "id": "ceeab3cf-8ccc-411f-89bc-7afd25151433",
+                "title": [
+                    "Amazon Kindle Paperwhite"
+                ],
+                "_version_": 1787913315093053440
+            },
+            {
+                "id": "ef11bd09-eea6-4e5c-ad66-cc08a3d1f769",
+                "title": [
+                    "Amazon Kindle Paperwhite"
+                ],
+                "_version_": 1787918991485829120
+            },
+            {
+                "id": "23dcbea5-979f-42ee-9683-765a59b529df",
+                "title": [
+                    "Amazon Kindle Paperwhite"
+                ],
+                "_version_": 1787919149956071424
+            },
+            {
+                "id": "e3d2d3a9-c529-4d94-bc48-29bf3d71a5b7",
+                "title": [
+                    "Amazon Kindle Paperwhite"
+                ],
+                "_version_": 1787919319258103808
+            },
+            {
+                "id": "8340d419-05f9-47f4-b98d-97566e0aef43",
+                "title": [
+                    "Amazon Kindle Paperwhite"
+                ],
+                "_version_": 1787919339591041024
+            },
+            {
+                "id": "1152021e-ca3f-4604-826e-a0d2f51d990a",
+                "title": [
+                    "Amazon Kindle Paperwhite"
+                ],
+                "_version_": 1787920186185089024
+            },
+            {
+                "id": "c4279acc-f4a6-4151-8030-cd487f7bd8ee",
+                "title": [
+                    "Amazon Kindle Paperwhite"
+                ],
+                "_version_": 1788270270318903296
+            },
+            {
+                "id": "e278cfa8-a10f-4dfc-a026-6848f216cdae",
+                "title": [
+                    "Amazon Kindle Paperwhite"
+                ],
+                "_version_": 1788281919300960256
+            }
+        ]
+    }
+}
