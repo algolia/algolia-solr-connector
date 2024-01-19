@@ -25,8 +25,6 @@ import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.lang.invoke.MethodHandles;
-import java.security.AccessController;
-import java.security.PrivilegedExceptionAction;
 import java.util.List;
 import java.util.UUID;
 import java.util.concurrent.CompletableFuture;
@@ -51,14 +49,6 @@ public class AlgoliaUpdateRequestProcessor extends UpdateRequestProcessor {
         this.algoliaService = new AlgoliaServiceImpl(applicationId, writeKey);
     }
 
-    private void updateToAlgolia(AlgoliaRequest request) throws IOException {
-        String resp = this.algoliaService.createRecord(request);
-        LOGGER.info("Algolia response: {}", resp);
-        String value = Defaults.getObjectMapper()
-                .writeValueAsString(new AlgoliaRecord(UUID.randomUUID().toString()));
-        LOGGER.info("ObjectMapper test value: {}", value);
-    }
-
     @Override
     public void processAdd(AddUpdateCommand cmd) throws IOException {
         SolrInputDocument document = cmd.getSolrInputDocument();
@@ -77,23 +67,11 @@ public class AlgoliaUpdateRequestProcessor extends UpdateRequestProcessor {
                                 LOGGER.error(throwable.getMessage(), throwable);
                             }
                         });*/
-                if (System.getSecurityManager() == null) { // Means no SecurityManager installed
-                    String resp = this.algoliaService.createRecord(request);
-                    LOGGER.info("Algolia response: {}", resp);
-                    String value = Defaults.getObjectMapper()
-                            .writeValueAsString(new AlgoliaRecord(UUID.randomUUID().toString()));
-                    LOGGER.info("ObjectMapper test value: {}", value);
-                } else {
-                    AccessController.doPrivileged(new PrivilegedExceptionAction<Object>() {
-                            
-                            @Override
-                            public Object run() throws Exception {
-                                updateToAlgolia(request);
-                                // add the problematic code here, e.g. deserializing the Algolia response in HttpTransport.executeWithRetry method
-                                return null;
-                            }
-                    });
-                }                        
+                String resp = this.algoliaService.createRecord(request);
+                LOGGER.info("Algolia response: {}", resp);
+                String value = Defaults.getObjectMapper()
+                        .writeValueAsString(new AlgoliaRecord(UUID.randomUUID().toString()));
+                LOGGER.info("ObjectMapper test value: {}", value);
             } catch (Exception ex) {
                 LOGGER.warn("An error occurred {}", ex);
             }
