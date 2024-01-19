@@ -28,7 +28,7 @@
         <versions-maven-plugin.version>2.16.0</versions-maven-plugin.version>
         <!-- Maven Plugin Dependencies End -->
 
-        <solr.version>8.11.2</solr.version>
+        <solr.version>9.4.0</solr.version>
         <slf4j.version>2.0.7</slf4j.version>
         <commons-codec.version>1.15</commons-codec.version>
         <commons-logging.version>1.2</commons-logging.version>
@@ -38,7 +38,7 @@
         <apache.httpasyncclient.version>4.1.5</apache.httpasyncclient.version>
         <apache.httpcore.version>4.4.16</apache.httpcore.version>
         <junit-jupiter.version>5.10.0</junit-jupiter.version>
-        <solr.folder.location>/Users/peterhale/data/sites/solr-8.11.2</solr.folder.location>
+        <solr.folder.location>/Users/peterhale/data/sites/solr-9.4.0</solr.folder.location>
         <solr.url>http://localhost:8983/solr/algolia</solr.url>
         <algolia.application.id>TEJIG1OP44</algolia.application.id>
         <algolia.write.key>04d3c7502d9603f495f89dae66940ad4</algolia.write.key>

@@ -16,7 +16,7 @@ public class SolrDocumentTest {
 
     private static final String SOLR_BASE_URL = "http://localhost:8983/solr/algolia";
 
-    @Disabled
+    // @Disabled
     @Test
     public void createDocumentTest() throws Exception {
         try (SolrClient solrClient = new Http2SolrClient.Builder(SOLR_BASE_URL).build()) {
