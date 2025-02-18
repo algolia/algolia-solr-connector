@@ -41,7 +41,7 @@
         <solr.folder.location>/Users/peterhale/data/sites/solr-9.4.0</solr.folder.location>
         <solr.url>http://localhost:8983/solr/algolia</solr.url>
         <algolia.application.id>TEJIG1OP44</algolia.application.id>
-        <algolia.write.key>04d3c7502d9603f495f89dae66940ad4</algolia.write.key>
+        <algolia.write.key>${env.WRITE_KEY}</algolia.write.key>
         <algolia.index.name>solr_index</algolia.index.name>
     </properties>
     <build>
